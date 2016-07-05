@@ -1,0 +1,65 @@
+/*
+Theme Name: 2014 DIP Style
+Author: IN Automotive Advertising Network
+Author URI: https://in-autos.com/
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: car-import-2014
+Template: twentyfourteen
+
+This theme is a child of twentyfourteen theme using power and flexibility of Dealer Inventory Plugin
+*/
+
+@import url("../twentyfourteen/style.css");
+
+/* tabs */
+#tabs {
+	font-size: 14px;
+}
+#tabs .options_list {
+	border-bottom: 1px solid #cccccc;
+}
+.feature-list li {
+	border-bottom: 1px solid #cccccc;
+}
+
+ul.feature-list {
+	list-style: none;
+	margin-left: 0px;
+}
+
+/* Quick list */
+.quick-list li {
+	margin: 0px 10px 0px 10px;
+}
+.quick-list li p {
+	margin: 0px;
+}
+
+.quick-list {
+	list-style: none;
+}
+
+.gallery-image {
+	clear: both;
+	float: left;
+	width: 150px;
+	height: 150px;
+}
+
+/* single-inacar */
+.main_contents, .tabs_container {
+	margin: 10px;
+}
+.options_list {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.options_list > label {
+	display: inline-block;
+	width: 33%;
+	min-width: 100px;
+	max-width: 300px;
+	margin-right: 10px;
+}
