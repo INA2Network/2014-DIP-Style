@@ -57,6 +57,7 @@ get_header(); ?>
 						<li><a href="#tabs-5">Safety & Security</a></li>
 						<li><a href="#tabs-6">Other</a></li>
 						<li><a href="#tabs-7">Features (Options)</a></li>
+						<li><a href="#tabs-8">Dealer Info</a></li>
 					</ul>
 					<!-- Mechanical -->
 					<div class="tabs_content" id="tabs-1">
@@ -116,18 +117,27 @@ get_header(); ?>
 								echo DIP_HELPER::value('options_li');
 								/*
 								if (taxonomy_exists('features')) { // output as taxonomy
-									$taxonomy = get_the_terms($post->ID, 'features');
-									if ($taxonomy) {
-										foreach ($taxonomy as $taxonomy_term) {
-											?> <li><?php echo $taxonomy_term->name;?></li><?php }
-									}
+								$taxonomy = get_the_terms($post->ID, 'features');
+								if ($taxonomy) {
+								foreach ($taxonomy as $taxonomy_term) {
+								?> <li><?php echo $taxonomy_term->name;?></li><?php }
+								}
 								} else { // output as meta field
-									dip_output_field('options');
+								dip_output_field('options');
 
 								}
 								*/
 								?>
 							</ul>
+
+						</div>
+					</div>
+					<div class="tabs_content" id="tabs-8">
+						<div class="quick-list">
+							<div class="options_list"><label>Dealer Name</label><span><?php echo DIP_HELPER::value('dealer_name'); ?></span></div>
+							<div class="options_list"><label>Dealer Address</label><span><?php echo implode(' ', array(DIP_HELPER::value('dealer_address'), DIP_HELPER::value('dealer_city'), DIP_HELPER::value('dealer_state'), DIP_HELPER::value('dealer_zip'), )); ?></span></div>
+							<div class="options_list"><label>Dealer Phone</label><span><?php echo DIP_HELPER::value('dealer_phone'); ?></span></div>
+							<div class="options_list"><label>Dealer Email</label><span><?php echo DIP_HELPER::value('dealer_email'); ?></span></div>
 
 						</div>
 					</div>
